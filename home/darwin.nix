@@ -9,6 +9,8 @@
 
   programs.home-manager.enable = true;
 
+  nixpkgs.config.allowUnfree = true;
+
   imports = [
     ../modules/fonts/config.nix
     ../modules/neovim/config.nix
@@ -17,5 +19,6 @@
     ../modules/git/config.nix
     ../modules/tmux/config.nix
     ../modules/misc/config.nix
+    ../modules/raycast/config.nix
   ];
 }
