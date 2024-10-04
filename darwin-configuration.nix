@@ -8,7 +8,11 @@ in
   nix.settings.experimental-features = "nix-command flakes";
   system.stateVersion = 4;
   nixpkgs.hostPlatform = "x86_64-darwin";
-  
+
+  imports = [
+     ./modules/brew/config.nix
+  ];
+
   users.users.${currentUser} = {
     home = "/Users/${currentUser}";
     name = currentUser;

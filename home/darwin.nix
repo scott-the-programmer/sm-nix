@@ -19,6 +19,5 @@
     ../modules/git/config.nix
     ../modules/tmux/config.nix
     ../modules/misc/config.nix
-    ../modules/raycast/config.nix
   ];
 }
