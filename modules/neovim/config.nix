@@ -3,7 +3,7 @@
 let
   nvimConfig = builtins.fetchGit {
     url = "git@github.com:scott-the-programmer/nvim-config.git";
-    ref = "main";
+    ref = "master";
     rev = "96995e89b3068b6dd6f660dada49c280a75e9d55"; 
   };
 in

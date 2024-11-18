@@ -6,6 +6,16 @@
     lazygit
     delta
     jq
+    nodejs
+    arc-browser
+    ripgrep
+    fzf
+    spotify
+    htop
+    nmap
+    k9s
+    pulumi
+    pulumiPackages.pulumi-language-go
   ];
 
   programs.lazygit = {

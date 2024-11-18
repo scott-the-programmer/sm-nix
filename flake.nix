@@ -27,9 +27,9 @@
         };
     in
     {
-      darwinConfigurations."Scotts-MacBook-Pro-9" = mkDarwinConfiguration {
-        hostname = "Scotts-MacBook-Pro-9";
-        username = "scottalexandermurray";
+      darwinConfigurations."scotts-MacBook-Pro" = mkDarwinConfiguration {
+        hostname = "scotts-MacBook-Pro";
+        username = "scott";
       };
     };
 }

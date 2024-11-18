@@ -1,4 +1,4 @@
 .PHONY: personal-mac
 personal-mac:
-	nix build .#darwinConfigurations.Scotts-MacBook-Pro-9.system
+	nix build .#darwinConfigurations.scotts-MacBook-Pro.system
 	./result/sw/bin/darwin-rebuild switch --flake . --show-trace -v || true
