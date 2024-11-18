@@ -6,7 +6,16 @@ You probably don't want to run this directly, but rather use it as a reference f
 
 ## Installation
 
+## OSX
+
 ```console
-nix build .#darwinConfigurations.Scotts-MacBook-Pro-9.system
-./result/sw/bin/darwin-rebuild switch --flake . 
+make personal-mac
 ```
+
+## Linux
+
+TODO
+
+## WSL
+
+TODO
