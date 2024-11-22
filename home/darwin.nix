@@ -14,7 +14,6 @@
   imports = [
     ../modules/fonts/config.nix
     ../modules/alacritty/config.nix
-    ../modules/neovim/config.nix
     ../modules/zsh/config.nix
     ../modules/git/config.nix
     ../modules/tmux/config.nix
