@@ -7,4 +7,5 @@ _:
   "slack"
 
   "raycast"
+  "nikitabobko/tap/aerospace"
 ]
