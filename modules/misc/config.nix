@@ -16,6 +16,7 @@
     k9s
     neovim
     pulumi
+    minikube
     pulumiPackages.pulumi-language-go
   ];
 
