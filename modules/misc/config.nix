@@ -14,6 +14,7 @@
     htop
     nmap
     k9s
+    neovim
     pulumi
     pulumiPackages.pulumi-language-go
   ];
