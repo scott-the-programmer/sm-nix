@@ -56,6 +56,9 @@
       initExtra = ''
         export GOENV_ROOT="$HOME/.goenv"
         export PATH="$GOENV_ROOT/bin:$PATH"
+        
+        export PATH="$PATH:/Users/scott/Documents/github/flutter/bin"
+
         eval "$(goenv init -)"
       '';
     };
