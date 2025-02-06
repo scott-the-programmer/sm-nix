@@ -16,13 +16,9 @@ in
      #./modules/dock/config.nix
   ];
 
-  security.sudo.extraRules = [
-    { users = [ currentUser ];
-      options = [ "NOPASSWD" ];
-    }
-  ];
-
-  security.sudo.wheelNeedsPassword = false;
+  environment.etc."sudoers.d/user-no-password".text = ''
+    ${currentUser} ALL=(ALL) NOPASSWD: ALL
+  '';
 
   users.users.${currentUser} = {
     home = "/Users/${currentUser}";
