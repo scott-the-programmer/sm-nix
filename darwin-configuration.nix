@@ -12,8 +12,13 @@ in
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-     ./modules/brew/config.nix
-     ./modules/dock/config.nix
+     #./modules/brew/config.nix
+     #./modules/dock/config.nix
+  ];
+  security.sudo.extraRules = [
+    { users = [ ${currentUser} ];
+      options = [ "NOPASSWD" ];
+    }
   ];
 
   users.users.${currentUser} = {
