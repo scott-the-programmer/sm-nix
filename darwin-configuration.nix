@@ -28,13 +28,4 @@ in
     home = "/Users/${currentUser}";
     name = currentUser;
   };
-
-  local = {
-    dock.enable = true;
-    dock.entries = [
-      { path = "/Applications/Slack.app/"; }
-      { path = "${pkgs.alacritty}/Applications/Alacritty.app/"; }
-      { path = "${pkgs.arc-browser}/Applications/Arc.app/"; }
-    ];
-  };
 }
