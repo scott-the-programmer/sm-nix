@@ -15,11 +15,14 @@ in
      #./modules/brew/config.nix
      #./modules/dock/config.nix
   ];
+
   security.sudo.extraRules = [
     { users = [ currentUser ];
       options = [ "NOPASSWD" ];
     }
   ];
+
+  security.sudo.wheelNeedsPassword = false;
 
   users.users.${currentUser} = {
     home = "/Users/${currentUser}";
