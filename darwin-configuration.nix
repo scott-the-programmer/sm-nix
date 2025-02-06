@@ -16,7 +16,7 @@ in
      #./modules/dock/config.nix
   ];
   security.sudo.extraRules = [
-    { users = [ ${currentUser} ];
+    { users = [ currentUser ];
       options = [ "NOPASSWD" ];
     }
   ];
