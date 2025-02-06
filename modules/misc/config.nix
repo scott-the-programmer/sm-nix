@@ -12,12 +12,13 @@
     fzf
     spotify
     htop
+    docker
     nmap
     k9s
     neovim
     pulumi
     minikube
-    pulumiPackages.pulumi-language-go
+    pulumi
   ];
 
   programs.lazygit = {
