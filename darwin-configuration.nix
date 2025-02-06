@@ -16,10 +16,6 @@ in
      #./modules/dock/config.nix
   ];
 
-  environment.etc."sudoers.d/user-no-password".text = ''
-    ${currentUser} ALL=(ALL) NOPASSWD: ALL
-  '';
-
   users.users.${currentUser} = {
     home = "/Users/${currentUser}";
     name = currentUser;
