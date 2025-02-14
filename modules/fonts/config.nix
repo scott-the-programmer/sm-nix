@@ -8,15 +8,11 @@
     jetbrains-mono
     victor-mono
     iosevka
-    (nerdfonts.override {
-      fonts = [
-        "FiraCode"
-        "Hack"
-        "JetBrainsMono"
-        "VictorMono"
-        "Iosevka"
-      ];
-    })
+    nerd-fonts.fira-code
+    nerd-fonts.hack
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.victor-mono
+    nerd-fonts.iosevka
   ];
 
   home.file.".config/fontconfig/fonts.conf".text = ''
