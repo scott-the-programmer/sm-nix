@@ -22,6 +22,7 @@
     vscode
     discord
     slack
+    entr
   ];
 
   programs.lazygit = {
@@ -41,27 +42,6 @@
           pager = "delta --dark --paging=never";
         };
       };
-    };
-  };
-
-  programs.git = {
-    enable = true;
-    delta = {
-      enable = true;
-      options = {
-        features = "side-by-side line-numbers decorations";
-        syntax-theme = "Dracula";
-        plus-style = "syntax #003800";
-        minus-style = "syntax #3f0001";
-      };
-    };
-  };
-
-  programs.zsh = {
-    enable = true;
-    shellAliases = {
-      jqs = "jq -r 'keys'"; 
-      jqp = "jq -r '.[]'"; 
     };
   };
 
