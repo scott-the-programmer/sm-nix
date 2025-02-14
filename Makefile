@@ -5,5 +5,5 @@ personal-mac:
 
 .PHONY: personal-nixos
 personal-nixos:
-	nix build .#nixosConfigurations.nixos.config.system.build.toplevel
-	sudo ./result/bin/switch-to-configuration switch
+	nix build .#nixosConfigurations.nixos.config.system.build.toplevel --impure
+	sudo ./result/bin/switch-to-configuration switch 
