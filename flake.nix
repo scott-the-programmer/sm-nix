@@ -11,17 +11,10 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager }:
     let
-      # Shared configuration for Home Manager
       homeManagerCommon = { username }: {
         home.username = username;
-        home.stateVersion = "23.05"; # Update to your desired version
-        # Add shared Home Manager configuration here
+        home.stateVersion = "23.05"; 
         programs.bash.enable = true;
-        home.packages = with pkgs; [
-          htop
-          neofetch
-          tmux
-        ];
       };
 
       # macOS-specific configuration
