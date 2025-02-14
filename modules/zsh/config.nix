@@ -51,6 +51,8 @@
       shellAliases = {
         ghub = "cd ~/Documents/github";
         ls = "ls -l";
+        nconf = "nvim ~/.config/nvim";
+        zconf = "nvim ~/.zshrc";
       }; 
 
       initExtra = ''
