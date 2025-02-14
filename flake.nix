@@ -25,10 +25,32 @@
           ];
           specialArgs = { inherit username; };
         };
+
+      mkNixosConfiguration = { system ? "x86_64-linux", hostname, username }:
+        nixpkgs.lib.nixosSystem {
+          inherit system;
+          modules = [
+            ./nixos-configuration.nix
+            home-manager.nixosModules.home-manager
+            {
+              system.configurationRevision = self.rev or self.dirtyRev or null;
+              networking.hostName = hostname;
+              home-manager.users.${username} = import ./home/nixos.nix;
+              home-manager.extraSpecialArgs = { inherit username; }; 
+              home-manager.backupFileExtension = "backup";
+            }
+          ];
+          specialArgs = { inherit username; };
+        };
     in
     {
       darwinConfigurations."scotts-MacBook-Pro" = mkDarwinConfiguration {
         hostname = "scotts-MacBook-Pro";
+        username = "scott";
+      };
+
+      nixosConfigurations."nixos" = mkNixosConfiguration {
+        hostname = "nixos";
         username = "scott";
       };
     };
