@@ -5,7 +5,7 @@ let
 in
 {
   nix.settings.experimental-features = "nix-command flakes";
-  system.stateVersion = 4;
+  system.stateVersion = 5;
   nixpkgs.hostPlatform = "x86_64-darwin";
 
   nixpkgs.config.allowUnfree = true;

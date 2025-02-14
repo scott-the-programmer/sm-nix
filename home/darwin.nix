@@ -4,12 +4,10 @@
   home.username = "${username}";
   home.homeDirectory = "/Users/${username}";
 
-
-  home.stateVersion = "23.05";
-
   programs.home-manager.enable = true;
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowBroken = true;
 
   imports = [
     ../modules/fonts/config.nix
