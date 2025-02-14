@@ -18,7 +18,10 @@
     neovim
     pulumi
     minikube
-    pulumi
+    atuin
+    vscode
+    discord
+    slack
   ];
 
   programs.lazygit = {
