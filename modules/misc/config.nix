@@ -23,6 +23,7 @@
     discord
     slack
     entr
+    ghostty
   ];
 
   programs.lazygit = {
