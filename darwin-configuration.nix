@@ -9,6 +9,7 @@ in
   nixpkgs.hostPlatform = "x86_64-darwin";
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowBroken = true;
 
   imports = [
      #./modules/brew/config.nix
