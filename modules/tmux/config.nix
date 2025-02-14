@@ -20,7 +20,7 @@ let
     set -g renumber-windows on
     bind-key C-a send-prefix
     bind | split-window -h -c "#{pane_current_path}"
-    bind * split-window -v -c "#{pane_current_path}" 
+    bind _ split-window -v -c "#{pane_current_path}" 
     bind -r t select-layout tiled 
     unbind '"'
     unbind %
