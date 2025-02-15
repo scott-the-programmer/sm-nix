@@ -24,6 +24,8 @@
     slack
     entr
     gcc
+    python3
+    pip
   ];
 
   programs.lazygit = {
