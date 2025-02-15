@@ -2,7 +2,6 @@
 
 let
   tmuxConf = pkgs.writeText "tmux.conf" ''
-    set -g @plugin 'tmux-plugins/tpm'
     set -g @plugin 'tmux-plugins/tmux-sensible'
     set -g @plugin 'dracula/tmux'
     # dracula options
@@ -50,6 +49,11 @@ in
   programs.tmux = {
     enable = true;
     extraConfig = builtins.readFile tmuxConf;
+    plugins = with pkgs;
+      [
+        tmuxPlugins.dracula
+        tmuxPlugins.better-mouse-mode
+      ];
   };
 
   home.file.".tmux/plugins/tpm".source = pkgs.fetchFromGitHub {
