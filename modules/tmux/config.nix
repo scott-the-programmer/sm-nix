@@ -2,8 +2,6 @@
 
 let
   tmuxConf = pkgs.writeText "tmux.conf" ''
-    set -g @plugin 'tmux-plugins/tmux-sensible'
-    set -g @plugin 'dracula/tmux'
     # dracula options
     set -g @dracula-show-network false
     set -g @dracula-military-time true
