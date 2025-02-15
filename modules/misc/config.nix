@@ -23,6 +23,9 @@
     discord
     slack
     entr
+    neovim
+    gcc
+    htop
   ];
 
   programs.lazygit = {
