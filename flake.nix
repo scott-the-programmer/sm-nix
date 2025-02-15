@@ -27,10 +27,7 @@
             {
               system.configurationRevision = self.rev or self.dirtyRev or null;
               networking.hostName = hostname;
-              home-manager.users.${username} = {
-                imports = [ (homeManagerCommon { inherit username; }) ];
-                home.homeDirectory = "/Users/${username}"; # macOS-specific
-              };
+              home-manager.users.${username} = import ./home/darwin.nix;
               home-manager.extraSpecialArgs = { inherit username; };
               home-manager.backupFileExtension = "backup";
             }
@@ -52,6 +49,7 @@
                 imports = [ (homeManagerCommon { inherit username; }) ];
                 home.homeDirectory = "/home/${username}"; # NixOS-specific
               };
+              home-manager.users.${username} = import ./home/nixos.nix;
               home-manager.extraSpecialArgs = { inherit username; };
               home-manager.backupFileExtension = "backup";
             }
