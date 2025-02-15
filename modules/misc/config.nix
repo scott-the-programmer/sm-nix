@@ -24,7 +24,6 @@
     slack
     entr
     gcc
-    htop
   ];
 
   programs.lazygit = {
