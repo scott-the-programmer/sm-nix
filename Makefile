@@ -5,5 +5,5 @@ mac:
 
 .PHONY: nixos
 nixos:
-	nix build .#nixosConfigurations.nixos.config.system.build.toplevel --impure
+	NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1 nix build .#nixosConfigurations.nixos.config.system.build.toplevel --impure
 	sudo ./result/bin/switch-to-configuration switch 
