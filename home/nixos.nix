@@ -2,7 +2,9 @@
 
 {
   home.username = "${username}";
-  home.homeDirectory = "/Users/${username}";
+  home.homeDirectory = "/home/${username}";
+
+  home.stateVersion = "23.05";
 
   programs.home-manager.enable = true;
 
