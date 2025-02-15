@@ -62,6 +62,7 @@
         export PATH="$PATH:/Users/scott/Documents/github/flutter/bin"
 
         eval "$(goenv init -)"
+        eval "$(atuin init zsh)"
       '';
     };
   };
