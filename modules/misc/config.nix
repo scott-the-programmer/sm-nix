@@ -17,6 +17,7 @@
     k9s
     neovim
     pulumi
+    pulumiPackages.pulumi-language-go
     minikube
     atuin
     vscode
@@ -25,7 +26,9 @@
     entr
     gcc
     python3
-    pip
+    sshpass
+    yarn
+    argo
   ];
 
   programs.lazygit = {
