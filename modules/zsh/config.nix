@@ -17,8 +17,7 @@
           "colored-man-pages"
           "command-not-found"
           "z"
-        ];
-      };
+        ]; };
       plugins = [
         {
           name = "zsh-autosuggestions";
@@ -60,6 +59,8 @@
         export PATH="$GOENV_ROOT/bin:$PATH"
         
         export PATH="$PATH:/Users/scott/Documents/github/flutter/bin"
+        export PATH="$PATH:/Users/scott/Library/Python/3.9/bin"
+        export PATH="/Users/scott/.local/bin:$PATH"
 
         eval "$(goenv init -)"
         eval "$(atuin init zsh)"
