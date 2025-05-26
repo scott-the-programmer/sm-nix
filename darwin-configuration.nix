@@ -20,4 +20,6 @@ in
     home = "/Users/${currentUser}";
     name = currentUser;
   };
+
+  system.primaryUser = currentUser;
 }
