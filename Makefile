@@ -6,6 +6,7 @@ mac:
 .PHONY: update
 update:
 	sudo nix-channel --update
+	sudo nix flake update
 
 .PHONY: nixos
 nixos:
