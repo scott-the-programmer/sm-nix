@@ -12,7 +12,7 @@ in
   nixpkgs.config.allowBroken = true;
 
   imports = [
-     #./modules/brew/config.nix
+     ./modules/brew/config.nix
      #./modules/dock/config.nix
   ];
 
