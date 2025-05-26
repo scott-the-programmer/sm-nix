@@ -18,7 +18,6 @@
     neovim
     pulumi
     pulumiPackages.pulumi-language-go
-    minikube
     atuin
     vscode
     discord
