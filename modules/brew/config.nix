@@ -13,7 +13,6 @@
     ];
     brews = [
       "sketchybar"
-      "minikube"
     ];
     casks = pkgs.callPackage ./casks.nix {};
   };
