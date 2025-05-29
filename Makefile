@@ -1,7 +1,7 @@
 .PHONY: mac
 mac:
 	nix build .#darwinConfigurations.scotts-MacBook-Pro.system
-	./result/sw/bin/darwin-rebuild switch --flake . --show-trace -v || true
+	sudo ./result/sw/bin/darwin-rebuild switch --flake . --show-trace -v || true
 
 .PHONY: update
 update:
