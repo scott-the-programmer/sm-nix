@@ -3,6 +3,11 @@ mac:
 	nix build .#darwinConfigurations.scotts-MacBook-Pro.system
 	sudo ./result/sw/bin/darwin-rebuild switch --flake . --show-trace -v || true
 
+.PHONY: mac-arm64
+mac-arm64:
+	nix build .#darwinConfigurations.scotts-MacBook-Air.system
+	sudo ./result/sw/bin/darwin-rebuild switch --flake . --show-trace -v || true
+
 .PHONY: update
 update:
 	sudo nix-channel --update
