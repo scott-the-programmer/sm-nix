@@ -59,6 +59,12 @@
         username = "scott";
       };
 
+      darwinConfigurations."scotts-MacBook-Air" = mkDarwinConfiguration {
+        hostname = "scotts-MacBook-Air";
+        username = "scott";
+        system = "aarch64-darwin";
+      };
+
       nixosConfigurations."nixos" = mkNixosConfiguration {
         hostname = "nixos";
         username = "scott";
