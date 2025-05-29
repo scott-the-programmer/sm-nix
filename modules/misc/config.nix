@@ -28,6 +28,7 @@
     sshpass
     yarn
     argo
+    dotnet-sdk
   ];
 
   programs.lazygit = {
