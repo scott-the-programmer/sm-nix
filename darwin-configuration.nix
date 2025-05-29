@@ -6,7 +6,6 @@ in
 {
   nix.settings.experimental-features = "nix-command flakes";
   system.stateVersion = 5;
-  # nixpkgs.hostPlatform = "x86_64-darwin"; # Removed this line
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowBroken = true;
