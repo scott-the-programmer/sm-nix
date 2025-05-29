@@ -29,6 +29,7 @@
     yarn
     argo
     dotnet-sdk_9
+    aider-chat
   ];
 
   programs.lazygit = {
