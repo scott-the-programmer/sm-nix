@@ -9,12 +9,14 @@ You probably don't want to run this directly, but rather use it as a reference f
 ## OSX
 
 ```console
-make mac
+make mac-arm64
 ```
 
 ## NixOS
 
+```
 make nixos
+```
 
 ## WSL
 
