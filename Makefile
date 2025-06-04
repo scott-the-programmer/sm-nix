@@ -5,7 +5,7 @@ mac:
 
 .PHONY: mac-arm64
 mac-arm64:
-	nix build .#darwinConfigurations.scotts-MacBook-Air.system
+	sudo nix build .#darwinConfigurations.scotts-MacBook-Air.system
 	sudo ./result/sw/bin/darwin-rebuild switch --flake . --show-trace -v || true
 
 .PHONY: update
