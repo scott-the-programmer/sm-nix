@@ -55,14 +55,18 @@
       }; 
 
       initExtra = ''
-        export GOENV_ROOT="$HOME/.goenv"
+        export GOENV_ROOT="$HOME/.goenv/bin"
         export PATH="$GOENV_ROOT/bin:$PATH"
+        
+        export PYENV_ROOT="$HOME/.pyenv"
+        export PATH="$PYENV_ROOT/bin:$PATH"
         
         export PATH="$PATH:/Users/scott/Documents/github/flutter/bin"
         export PATH="$PATH:/Users/scott/Library/Python/3.9/bin"
         export PATH="/Users/scott/.local/bin:$PATH"
 
         eval "$(goenv init -)"
+        eval "$(pyenv init -)"
         eval "$(atuin init zsh)"
       '';
     };
