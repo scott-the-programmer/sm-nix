@@ -28,8 +28,9 @@
     sshpass
     yarn
     argo
-    dotnet-sdk_9
-    aider-chat
+    dotnet-sdk
+    ripgrep
+    fzf
   ];
 
   programs.lazygit = {
