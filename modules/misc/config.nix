@@ -6,7 +6,6 @@
     lazygit
     delta
     jq
-    nodejs
     arc-browser
     ripgrep
     fzf
@@ -31,6 +30,9 @@
     dotnet-sdk
     ripgrep
     fzf
+    pnpm
+    rustup
+    newsboat
   ];
 
   programs.lazygit = {

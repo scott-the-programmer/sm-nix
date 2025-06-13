@@ -52,6 +52,7 @@
         ls = "ls -l";
         nconf = "nvim ~/.config/nvim";
         zconf = "nvim ~/.zshrc";
+        nb = "newsboat";
       }; 
 
       initExtra = ''
@@ -60,10 +61,17 @@
         
         export PYENV_ROOT="$HOME/.pyenv"
         export PATH="$PYENV_ROOT/bin:$PATH"
+        export PATH="$HOME/Documents/github/flutter/bin:$PATH"
+        export PATH="$HOME/Documents/github/goto/dist:$PATH"
         
         export PATH="$PATH:/Users/scott/Documents/github/flutter/bin"
         export PATH="$PATH:/Users/scott/Library/Python/3.9/bin"
         export PATH="/Users/scott/.local/bin:$PATH"
+
+
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
         eval "$(goenv init -)"
         eval "$(pyenv init -)"
