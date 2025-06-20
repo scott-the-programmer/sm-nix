@@ -56,7 +56,7 @@
       }; 
 
       initExtra = ''
-        export GOENV_ROOT="$HOME/.goenv/bin"
+        export GOENV_ROOT="$HOME/.goenv"
         export PATH="$GOENV_ROOT/bin:$PATH"
         
         export PYENV_ROOT="$HOME/.pyenv"
