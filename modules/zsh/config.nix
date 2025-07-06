@@ -14,9 +14,7 @@
           "history"
           "sudo"
           "dirhistory"
-          "colored-man-pages"
-          "command-not-found"
-          "z"
+          "colored-man-pages" "command-not-found" "z"
         ]; };
       plugins = [
         {
@@ -67,7 +65,9 @@
         export PATH="$PATH:/Users/scott/Documents/github/flutter/bin"
         export PATH="$PATH:/Users/scott/Library/Python/3.9/bin"
         export PATH="/Users/scott/.local/bin:$PATH"
-
+        export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+        export PATH="/usr/local/opt/libpq/bin:$PATH"
+        export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix)/lib:$(brew --prefix)/opt/libiconv/lib
 
         export NVM_DIR="$HOME/.nvm"
         [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -76,6 +76,7 @@
         eval "$(goenv init -)"
         eval "$(pyenv init -)"
         eval "$(atuin init zsh)"
+        eval "$(/opt/homebrew/bin/brew shellenv)"
       '';
     };
   };
