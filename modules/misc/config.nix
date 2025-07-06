@@ -15,8 +15,6 @@
     nmap
     k9s
     neovim
-    pulumi
-    pulumiPackages.pulumi-language-go
     atuin
     vscode
     discord
